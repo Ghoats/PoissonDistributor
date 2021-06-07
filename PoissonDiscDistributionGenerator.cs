@@ -119,4 +119,9 @@ public class PoissonDiscDistributionGenerator
         
         return new Vector2Int(xGrid, yGrid);
     }
+
+    private static Vector3 ToWorldPoint(Vector2 position)
+    {
+        return new Vector3(position.x, 0.0f, position.y);
+    }
 }
